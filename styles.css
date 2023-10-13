@@ -18,9 +18,10 @@ html, body {
   font-family: 'Roboto', 'Helvetica', sans-serif;
 }
 .demo-avatar {
-  width: 48px;
-  height: 48px;
-  border-radius: 24px;
+  width: 192px;
+  height: 192px;
+  border-radius: 128px;
+  opacity: 0.5;
 }
 .demo-layout .mdl-layout__header .mdl-layout__drawer-button {
   color: rgba(0, 0, 0, 0.54);
@@ -48,18 +49,8 @@ html, body {
           align-items: center;
 }
 .demo-drawer-header {
-  box-sizing: border-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-justify-content: flex-end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
   padding: 16px;
-  height: 151px;
+  text-align: center;
 }
 .demo-avatar-dropdown {
   display: -webkit-flex;
