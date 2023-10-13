@@ -1,0 +1,110 @@
+{
+  "name": "pcloud-sdk-js",
+  "version": "2.0.0",
+  "description": "pCloud's Javascript SDK",
+  "main": "lib/index.js",
+  "types": "./typings/index.d.ts",
+  "browser": {
+    "./lib/client/methods/download.js": "./lib/client/methods/browser/download.js",
+    "./lib/client/methods/upload.js": "./lib/client/methods/browser/upload.js",
+    "./lib/client/methods/downloadfile.js": "./lib/client/methods/browser/downloadfile.js",
+    "./lib/utils/node-utils.js": "./lib/utils/browser/node-utils.js",
+    "./lib/env/index.js": "./lib/env/browser.js",
+    "./src/client/methods/download.js": "./src/client/methods/browser/download.js",
+    "./src/client/methods/upload.js": "./src/client/methods/browser/upload.js",
+    "./src/client/methods/downloadfile.js": "./src/client/methods/browser/downloadfile.js",
+    "./src/env/index.js": "./src/env/browser.js",
+    "./src/utils/httpProgressMiddleware.js": "./src/utils/browser/httpProgressMiddleware.js"
+  },
+  "scripts": {
+    "clean-web": "./node_modules/.bin/rimraf dist",
+    "compile-web": "./node_modules/.bin/webpack -p",
+    "build-web": "yarn clean-web && yarn compile-web",
+    "watch-web": "./node_modules/.bin/webpack -w",
+    "build-node": "./node_modules/.bin/babel src --out-dir lib",
+    "watch-node": "./node_modules/.bin/babel -w src --out-dir lib",
+    "prepublishOnly": "yarn build-node && yarn build-web",
+    "start": "node server.js",
+    "lint": "eslint src",
+    "flow": "flow",
+    "test": "yarn test-only",
+    "test-only": "jest --coverage --colors",
+    "test:watch": "jest --colors --watch",
+    "precommit": "lint-staged"
+  },
+  "engineStrict": true,
+  "engines": {
+    "node": ">= 4.0.0"
+  },
+  "dependencies": {
+    "@babel/cli": "^7.7.5",
+    "@babel/core": "^7.7.5",
+    "@babel/preset-env": "^7.7.6",
+    "@babel/runtime": "^7.7.6",
+    "deep-assign": "^3.0.0",
+    "form-data": "^3.0.0",
+    "invariant": "^2.2.4",
+    "superagent": "^5.1.2",
+    "yarn": "^1.12.1"
+  },
+  "devDependencies": {
+    "@babel/plugin-transform-async-to-generator": "^7.7.4",
+    "@babel/plugin-transform-regenerator": "^7.7.5",
+    "@babel/plugin-transform-runtime": "^7.7.6",
+    "@babel/preset-flow": "^7.7.4",
+    "babel-eslint": "^10.0.3",
+    "babel-jest": "^24.9.0",
+    "babel-loader": "^8.0.6",
+    "eslint": "^6.7.2",
+    "eslint-config-prettier": "^6.7.0",
+    "eslint-plugin-flowtype": "^4.5.2",
+    "eslint-plugin-jest": "^23.1.1",
+    "eslint-plugin-prettier": "^3.1.1",
+    "express": "^4.16.4",
+    "fetch-mock": "^8.0.1",
+    "flow-bin": "^0.113.0",
+    "flow-coverage-report": "^0.6.1",
+    "husky": "^3.1.0",
+    "jest": "^24.9.0",
+    "lint-staged": "^9.5.0",
+    "multiparty": "^4.2.1",
+    "openurl": "^1.1.1",
+    "prettier": "^1.19.1",
+    "prompt": "^1.0.0",
+    "rimraf": "^3.0.0",
+    "source-map-loader": "^0.2.4",
+    "superagent-mocker": "^0.5.2",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-middleware": "^3.7.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pCloud/pcloud-sdk-js.git"
+  },
+  "keywords": [
+    "pcloud",
+    "javascript",
+    "sdk",
+    "cloud"
+  ],
+  "author": "Diyan Chuburov <no1knows.me@gmail.com>",
+  "license": "ISC",
+  "jest": {
+    "rootDir": "src",
+    "testEnvironment": "node",
+    "globals": {
+      "ENV": "node"
+    }
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint"
+    ]
+  }
+}

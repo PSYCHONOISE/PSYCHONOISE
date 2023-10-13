@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "pcloud-sdk-js": "^2.0.0"
+  }
+}
