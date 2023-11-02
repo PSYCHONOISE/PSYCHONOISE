@@ -58,11 +58,15 @@
       margin-bottom: 40px;
       z-index: 900;
     }
+    #LOGOWRAPPER div:first-child {
+      cursor: pointer;
+      margin: 0 auto;
+    }
     </style>
   </head>
   <body>
     <div class="demo-layout mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header">
-      <header class="demo-header mdl-layout__header mdl-color--grey-100 mdl-color-text--grey-600">
+      <!-- <header class="demo-header mdl-layout__header mdl-color--grey-100 mdl-color-text--grey-600">
         <div class="mdl-layout__header-row">
           <span class="mdl-layout-title">Home</span>
           <div class="mdl-layout-spacer"></div>
@@ -84,30 +88,33 @@
             <li class="mdl-menu__item">Legal information</li>
           </ul>
         </div>
-      </header>
+      </header> -->
       <div class="demo-drawer mdl-layout__drawer mdl-color--blue-grey-900 mdl-color-text--blue-grey-50">
         <header class="demo-drawer-header">
           <img src="images/sb_logo.png" class="demo-avatar">
+          <svg xmlns="http://www.w3.org/2000/svg" height="20" width="98" class="GjGsN" style="--icon-color-primary: RGB(var(--white-on-dark));"><use href="#managed-icon__logo-tumblr"></use></svg>
         </header>
         <nav class="demo-navigation mdl-navigation mdl-color--blue-grey-800">
-          <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">home</i>Home</a>
-          <a class="mdl-navigation__link" href="/AI-Tool-Master-List/"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">inbox</i>AI Tool Master List</a>
-          <!-- <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">inbox</i>Inbox</a>
-          <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">delete</i>Trash</a>
-          <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">report</i>Spam</a>
-          <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">forum</i>Forums</a>
-          <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">flag</i>Updates</a>
-          <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">local_offer</i>Promos</a>
-          <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">shopping_cart</i>Purchases</a>
-          <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">people</i>Social</a> -->
+          <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons">home</i>Home</a>
+          <a class="mdl-navigation__link" href="/AI-Tool-Master-List/"><i class="mdl-color-text--blue-grey-400 material-icons">inbox</i>AI Tool Master List</a>
+          <a class="mdl-navigation__link" href="/glitch-slider/"><i class="mdl-color-text--blue-grey-400 material-icons">inbox</i>Glitch Slider (Ahegao)</a>
+          <!-- <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons">inbox</i>Inbox</a>
+          <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons">delete</i>Trash</a>
+          <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons">report</i>Spam</a>
+          <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons">forum</i>Forums</a>
+          <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons">flag</i>Updates</a>
+          <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons">local_offer</i>Promos</a>
+          <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons">shopping_cart</i>Purchases</a>
+          <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons">people</i>Social</a> -->
           <div class="mdl-layout-spacer"></div>
-          <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">help_outline</i><span class="visuallyhidden">Help</span></a>
+          <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons">help_outline</i><span class="visuallyhidden">Help</span></a>
         </nav>
       </div>
       <main class="mdl-layout__content mdl-color--grey-100">
         <div class="mdl-grid demo-content">
-          <div class="demo-charts mdl-color--white mdl-shadow--2dp mdl-cell mdl-cell--12-col mdl-grid" style="text-align: center;">
-            <div style="border: 0; width: 100%; height: 180px; background-image: url('./images/logo.png'); background-position: center; background-repeat: no-repeat; background-size: contain;"></div>
+          <div onclick="window.open('https://psychonoise.github.io/', '_self')" id="LOGOWRAPPER" class="demo-charts mdl-color--white mdl-shadow--2dp mdl-cell mdl-cell--12-col mdl-grid" style="text-align: center;">
+            <!-- <div id="LOGO" style="border: 0; width: 100%; height: 180px; background-image: url('./images/logo.png'); background-position: center; background-repeat: no-repeat; background-size: contain;"></div> -->
+            <img style="width:100%" src="./images/logo.png" alt="logo" class="logo"></a>
           </div>
           <div class="demo-charts mdl-color--white mdl-shadow--2dp mdl-cell mdl-cell--12-col mdl-grid" style="text-align: center;">
             <style type="text/css">iframe.tracks { margin: 8px auto; border: 0; max-width: 700px; height: 120px; }</style>
@@ -143,5 +150,34 @@
       </main>
     </div>
     <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <script src="https://unpkg.com/powerglitch@latest/dist/powerglitch.min.js"></script>
+    <script type="text/javascript">
+      PowerGlitch.glitch('.logo', {
+        "playMode": "hover",
+        "createContainers": true,
+        "hideOverflow": false,
+        "timing": {
+          "duration": 100000,
+          "easing": "linear"
+        },
+        "glitchTimeSpan": {
+          "start": 0,
+          "end": 1
+        },
+        "shake": {
+          "velocity": 60,
+          "amplitudeX": 0.12,
+          "amplitudeY": 0
+        },
+        "slice": {
+          "count": 13,
+          "velocity": 32,
+          "minHeight": 0.08,
+          "maxHeight": 0.13,
+          "hueRotate": true
+        },
+        "pulse": false
+      });
+    </script>
   </body>
 </html>
