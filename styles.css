@@ -20,8 +20,7 @@ html, body {
 .demo-avatar {
   width: 192px;
   height: 192px;
-  border-radius: 128px;
-  opacity: 0.5;
+  opacity: 0.7;
 }
 .demo-layout .mdl-layout__header .mdl-layout__drawer-button {
   color: rgba(0, 0, 0, 0.54);

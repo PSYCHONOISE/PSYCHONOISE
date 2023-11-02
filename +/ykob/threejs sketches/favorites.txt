@@ -1,0 +1,9 @@
+https://ykob.github.io/sketch-threejs/sketch/skull.html
+https://ykob.github.io/sketch-threejs/sketch/easy_glitch.html
+https://ykob.github.io/sketch-threejs/sketch/fog.html
+https://ykob.github.io/sketch-threejs/sketch/distort.html
+https://ykob.github.io/sketch-threejs/sketch/blink.html
+https://ykob.github.io/sketch-threejs/sketch/beam.html
+https://ykob.github.io/sketch-threejs/sketch/cyberspace.html
+https://ykob.github.io/sketch-threejs/sketch/repel.html
+https://ykob.github.io/sketch-threejs/sketch/node_text.html
